@@ -1,0 +1,20 @@
+@import './normalize.css';
+
+* {
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+    --main-bg-color: #22272e;
+    --scndry-bg-color: #444c56;
+    background-color: var(--main-bg-color);
+}
+.wrapper {
+	height: 80vh;
+	margin: 10vh auto 0;
+	width: 60vw;
+    background-color: var(--scndry-bg-color);
+}
+
