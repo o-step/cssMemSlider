@@ -68,28 +68,43 @@ p {
 }
 .bar {
    display: inline;
-   z-index: 999999;
-   width: 1rem;
-   height: 1rem;
-   border: .2rem solid rgb(208, 243, 232);
+   z-index: 999;
+   width: 3.3rem;
+   height: 3.3rem;
+   border: .2rem solid var(--scndry-bg-color) !important;
+   margin: 0;
+   cursor: pointer;
+   opacity: .7;
+   border-radius: 50%;
+   transition: all 0.4s ease;
+   text-align: center;
+}
+.circle-over {
+   text-align: center;
+   display: block;
+   z-index: 9999;
+   width: 1.2rem;
+   height: 1.2rem;
+   border: .2rem solid rgb(208, 243, 232) !important;
    margin: 1vw;
    cursor: pointer;
-   /* background-color: rgb(208, 243, 232); */
-   opacity: .8;
-   border-radius: 1vw;
+   opacity: 1;
+   border-radius: 50%;
    transition: all 0.4s ease;
    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .7);
 	box-shadow: 0 0 20px rgba(0, 0, 0, .7);
 }
+
+
 /* .check1, .check2, .check3, .check4, .check5, .check6 {
    z-index: -2;
 } */
-.bar:active {
-   background-color: wheat;
+.circle-over:active {
+   background-color: rgb(119, 86, 24);
 }
-.bar:checked {
+.circle-over:checked {
    background-color: wheat;
 }
  
@@ -178,20 +193,36 @@ label[for="r1"]:checked {
    .navigation {
       z-index: 1000;
       display: flex;
-      justify-content: flex-end;
-      padding-right: 3%;
+      justify-content: center;
       padding-bottom: 2%;
-      margin-top: -9%;
+      transform: translateY(-110%);
+   }
+   .bar {
+      width: 2.5rem;
+      height: 2.5rem;
+   }
+   p {
+      margin-top: 10%;
+      font-size: 1.5em;
+      text-align: left;
    }
 }
 @media (min-width: 600px) and (max-width: 699px) { 
    .navigation {
       z-index: 1000;
       display: flex;
-      justify-content: flex-end;
-      padding-right: 3%;
+      justify-content: center;
       padding-bottom: 2%;
-      margin-top: -10%;
+      transform: translateY(-110%);
+   }
+   .bar {
+      width: 2.5rem;
+      height: 2.5rem;
+   }
+   p {
+      margin-top: 10%;
+      font-size: 1.5em;
+      text-align: left;
    }
 }
 @media (min-width: 450px) and (max-width: 599px) { 
@@ -200,40 +231,55 @@ label[for="r1"]:checked {
       display: flex;
       justify-content: center;
       padding-bottom: 2%;
-      transform: translateY(-160%);
+      transform: translateY(-150%);
+   }
+   .bar {
+      width: 2rem;
+      height: 2rem;
    }
    p {
-      margin-top: 10%;
+      margin-top: 12%;
       font-size: 1.5em;
-      text-align: center;
+      text-align: left;
    }
 }
 @media (min-width: 320px) and (max-width: 449px) { 
    .navigation {
-      z-index: 1000;
+      z-index: 500;
       display: flex;
       justify-content: center;
       padding-bottom: 2%;
-      transform: translateY(-200%);
+      transform: translateY(-170%);
+   }
+   .bar {
+      width: 2rem;
+      height: 2rem;
    }
    p {
-      margin-top: 20%;
+      z-index: 99999;
+      margin-top: 17%;
       font-size: 1.5em;
-      text-align: center;
+      text-align: left;
    }
 }
 @media (min-width: 0px) and (max-width: 319px) { 
    .navigation {
-      z-index: 1000;
+      z-index: 500;
       display: flex;
       justify-content: center;
       padding-bottom: 2%;
-      transform: translateY(-250%);
+      transform: translateY(-180%);
+   }
+   .bar {
+      width: .8rem;
+      height: .8rem;
+      margin: .4rem;
    }
    p {
-      margin-top: 30%;
-      font-size: 1.2em;
-      text-align: center;
+      z-index: 99999;
+      margin-top: 19%;
+      font-size: 1rem;
+      text-align: left;
    }
 }
 
