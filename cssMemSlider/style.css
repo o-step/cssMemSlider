@@ -1,5 +1,6 @@
 @import './normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 * {
    -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
