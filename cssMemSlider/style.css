@@ -28,7 +28,7 @@ body {
 	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
-input[name="r"] { 
+input[name="control"] { 
    display: none;
 }
 .slide {
@@ -68,7 +68,7 @@ p {
    padding-bottom: 2%;
    margin-top: -6%;
 }
-.bar {
+.label-button {
    display: inline;
    z-index: 999;
    width: 3.3rem;
@@ -81,17 +81,17 @@ p {
    transition: all 0.4s ease;
    text-align: center;
 }
-.bar:hover {
+.label-button:hover {
    opacity: 1;
    transform:scale(1.2);
 }
-.bar:hover .circle-over {
+.label-button:hover .circle-over {
    background-color: rgba(208, 243, 232, 0.219);
 }
-.bar:active .circle-over {
+.label-button:active .circle-over {
    background-color: rgba(210, 141, 221, 0.541);
 }
-.bar:checked .circle-over {
+.label-button:checked .circle-over {
    background-color: rgba(228, 229, 236, 0.911);
 }
 .circle-over {
@@ -149,7 +149,7 @@ p {
    display: block;
    transition: 1s;
 }
-#r1:checked ~  .navigation > .bar > .circle-over-1 {
+#r1:checked ~  .navigation > .label-button > .circle-over-1 {
    background-color: rgb(245, 238, 238) !important;
    transform: scale(1.3);
    -webkit-box-shadow: 0 0 .8rem rgba(0, 0, 0, .8);
@@ -165,7 +165,7 @@ p {
    display: block;
    transition: 1s;
 }
-#r2:checked ~  .navigation > .bar > .circle-over-2 {
+#r2:checked ~  .navigation > .label-button > .circle-over-2 {
    background-color: rgb(245, 238, 238) !important;
    transform: scale(1.3);
    -webkit-box-shadow: 0 0 .8rem rgba(0, 0, 0, .8);
@@ -181,7 +181,7 @@ p {
    display: block;
    transition: 1s;
 }
-#r3:checked ~  .navigation > .bar > .circle-over-3 {
+#r3:checked ~  .navigation > .label-button > .circle-over-3 {
    background-color: rgb(245, 238, 238) !important;
    transform: scale(1.3);
    -webkit-box-shadow: 0 0 .8rem rgba(0, 0, 0, .8);
@@ -197,7 +197,7 @@ p {
    display: block;
    transition: 1s;
 }
-#r4:checked ~  .navigation > .bar > .circle-over-4 {
+#r4:checked ~  .navigation > .label-button > .circle-over-4 {
    background-color: rgb(245, 238, 238) !important;
    transform: scale(1.3);
    -webkit-box-shadow: 0 0 .8rem rgba(0, 0, 0, .8);
@@ -213,7 +213,7 @@ p {
    display: block;
    transition: 1s;
 }
-#r5:checked ~  .navigation > .bar > .circle-over-5 {
+#r5:checked ~  .navigation > .label-button > .circle-over-5 {
    background-color: rgb(245, 238, 238) !important;
    transform: scale(1.3);
    -webkit-box-shadow: 0 0 .8rem rgba(0, 0, 0, .8);
@@ -229,7 +229,7 @@ p {
    display: block;
    transition: 1s;
 }
-#r6:checked ~  .navigation > .bar > .circle-over-6 {
+#r6:checked ~  .navigation > .label-button > .circle-over-6 {
    background-color: rgb(245, 238, 238) !important;
    transform: scale(1.3);
    -webkit-box-shadow: 0 0 .8rem rgba(0, 0, 0, .8);
@@ -260,9 +260,10 @@ p {
       display: flex;
       justify-content: center;
       padding-bottom: 2%;
+      padding-right: 0;
       transform: translateY(-110%);
    }
-   .bar {
+   .label-button {
       width: 2.5rem;
       height: 2.5rem;
    }
@@ -277,10 +278,11 @@ p {
       z-index: 1000;
       display: flex;
       justify-content: center;
+      padding-right: 0;
       padding-bottom: 2%;
       transform: translateY(-110%);
    }
-   .bar {
+   .label-button {
       width: 2.5rem;
       height: 2.5rem;
    }
@@ -295,10 +297,11 @@ p {
       z-index: 1000;
       display: flex;
       justify-content: center;
+      padding-right: 0;
       padding-bottom: 2%;
       transform: translateY(-150%);
    }
-   .bar {
+   .label-button {
       width: 2rem;
       height: 2rem;
    }
@@ -313,10 +316,11 @@ p {
       z-index: 500;
       display: flex;
       justify-content: center;
+      padding-right: 0;
       padding-bottom: 2%;
       transform: translateY(-220%);
    }
-   .bar {
+   .label-button {
       width: 2rem;
       height: 2rem;
    }
@@ -332,10 +336,11 @@ p {
       z-index: 500;
       display: flex;
       justify-content: center;
+      padding-right: 0;
       padding-bottom: 2%;
       transform: translateY(-240%);
    }
-   .bar {
+   .label-button {
       width: .8rem;
       height: .8rem;
       margin: .4rem;
@@ -345,6 +350,9 @@ p {
       margin-top: 22%;
       font-size: 1rem;
       text-align: left;
+   }
+   .circle-over {
+      box-shadow: none;
    }
 }
 
